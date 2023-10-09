@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Technician Login</title>
+  </head>
+  <body>
+    <header>
+      <h1>WearView Academy IT Technical Support</h1>
+      <nav>
+        <ul>
+          <li><a href="staffLogin.html">Staff Login</a></li>
+          <li id="itLogin">IT Technician Login</li>
+        </ul>
+      </nav>
+    </header>
+   
+    <main>
+      <section id="technician-login">
+        <h2>IT Technician Login</h2>
+        <form onsubmit="return validateUserNameAndPassword()" action="technicianDashboard.php" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+        <hr class="footer-hr">
+        <div id="footer-div">
+        <p class="footer-text">Created by Yusuf Emre Guzel</p>
+        <p class="footer-text">&copy; WearView Academy 2023</p>
+        </div>
+      </footer>
+      <script src="validateTechnicianLogin.js"></script>
+  </body>
+</html>
