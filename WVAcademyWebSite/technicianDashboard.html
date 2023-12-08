@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="techDashboardStyle.css">
+    <meta charset="UTF-8">
+    <title>WearView Academy IT Technician Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <h1>WearView Academy IT Technician Dashboard</h1>
+    </header>
+   
+    <main>
+      <h2>Issues List</h2>
+      <table id="issues-table">
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Issue Type</th>
+          <th>Issue Description</th>
+          <th>Resolution Status</th>
+          <th>RESULT</th>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>Human Resources</td>
+          <td>Hardware</td>
+          <td>Mouse is not working</td>
+          <td id="1">
+            In Progress
+          </td>
+          <td>
+            <button onclick="done1()">DONE</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Alex Ohlert</td>
+            <td>Human Resources</td>
+            <td>Software</td>
+            <td>Internet Connection is Slow</td>
+            <td id="2">
+              In Progress
+            </td>
+            <td>
+                <button onclick="done2()">DONE</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Martin Giri</td>
+            <td>Finance</td>
+            <td>Hardware</td>
+            <td>Keybord not working</td>
+            <td id="3">
+              In Progress
+            </td>
+            <td>
+            <button onclick="done3()">DONE</button>
+            </td>
+          </tr>
+      </table>
+    </main>
+    <script src="completed.js"></script>
+    <footer>
+      <p>© WearView Academy 2023</p>
+    </footer>
+  </body>
+</html>
